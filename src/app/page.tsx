@@ -379,7 +379,7 @@ const Home = () => {
             onChange={(e) => setZ(parseFloat(e.target.value))}
           />
         </InputContainer>
-        Degen Price: {T.toFixed(5)}
+        Degen Price: {T}
         <br /> <br />
         <div>Total Subscriptions: {data.length}</div>
         <div>
@@ -443,9 +443,7 @@ const Home = () => {
                 <strong>{totalDailyDegenEarnings.toFixed(0)}</strong>
               </Td>
               <Td>
-                <strong>
-                  {(totalDailyDegenEarnings * 30).toFixed(0)}
-                </strong>
+                <strong>{(totalDailyDegenEarnings * 30).toFixed(0)}</strong>
               </Td>
               <Td>
                 <strong>Degen</strong>
@@ -520,6 +518,13 @@ const Home = () => {
             </tr>
           </tbody>
         </Table>
+        <a
+          style={{ color: "white" }}
+          target="_blank"
+          href="https://www.alfafrens.com/channel/0x27bf87dcaf7121715ac6b8addf2085a62be7ea0d"
+        >
+          @attilagaliba
+        </a>
       </Container>
     </Layout>
   );
